@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -38,19 +39,22 @@ header {
     height: 45px;
     margin-top: -12px;    
 }
+
+section {
+    overflow: hidden;
+}
 #background img {
     position: relative;
     width: 100%;
     height: auto;
 }
-/*
  #back_link {
+    position: relative;
     width: 23%;
-    margin-top: -26%;
-    margin-left: 20%
+    margin-top: ;
+    margin-left: 20%;
+    overflow: hidden;
 }
-*/
-/*
 .frst {
     color: #fff;
     font-size: 45px;
@@ -68,20 +72,31 @@ header {
     color: #fff;
     text-decoration: none;
 }
-*/
+.clearfix:before, 
+.clearfix:after { 
+content: " "; 
+display: table; 
+} 
+.clearfix:after {
+    clear: both;
+} 
+.left {
+    float: left;
+} 
+.right {
+    float: right;
+}
 #promos {
     position: relative;
-    margin-top: -11.5%;
+    margin-top: -12%;
     width: 100%;
     height: auto;
-    overflow: hidden;
     float: left;
 }
 .img {
     float: left;
     height: auto;
     width: auto;
-/*    background-repeat: no-repeat;*/
     border-top: 2px solid #fff;
 }
 #iphone_6s {
@@ -116,7 +131,7 @@ footer {
 }
 #navigation {
     margin: 0 auto;
-    max-width: 1450px;
+    max-width: 1100px;
     padding-top: 30px;
     overflow: hidden;
     font-size: 12px;
@@ -171,19 +186,16 @@ footer {
 }
 .ft_menu {
     overflow: hidden;
-    width: 1150px;
-/*    float: left;*/
-;
 }
 .ft_menu ul {
-    width: 1100px;
+    width: 825px;
     list-style-type: none;
     margin-top: 1%;
-    margin-left: -2%;
+    margin-left: -3%;
 }
 .ft_menu li {
     display: inline;
-    border-right: 2.5px solid #e3e3e3;
+    border-right: 1.5px solid #e3e3e3;
     padding-left: 3%;
     padding-right: 3%;
     margin-left: -2%; 
@@ -192,23 +204,15 @@ footer {
     color: #666;
     text-decoration: none;
 }
+.ft_menu a:hover {
+    text-decoration: underline;
+}
 .ft_menu li:last-child {
     float: right;
     padding-right: 0.5%;
-    background: url(img/16.png) no-repeat 10px;
+    background: url(http://images.apple.com/ac/flags/1/images/us/16.png) no-repeat 10px;
     border-right: none;
 }
 .ft_menu li:nth-child(5) {
     border-right: none;
 }
-
-
-
-
-
-
-
-
-
-
-
