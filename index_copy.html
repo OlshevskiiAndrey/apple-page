@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Apple</title>
-    <link rel="stylesheet" href="responsive_copy.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Apple</title>
+  <link rel="stylesheet" href="responsive_copy.css">
 </head>
 <body>
     <header>
@@ -22,33 +21,25 @@
             <li><a href="#" class="icon"><img src="http://www.apple.com/ac/globalnav/2.0/en_US/images/ac-globalnav/globalnav/bag/image_large.svg" alt=""></a></li>
         </ul>
        </div>
-    </header>
-    <section>
-        <div id="background">
-            <a href="#"><img src="http://images.apple.com/v/home/cl/images/heros/march_event_2016_medium.jpg" alt=""></a>
-        </div>
-    </section>
-    <section>
-        <div id="back_link">
-            <a href="#" class="frst">March Event 2016</a>
-            <br>
-            <a href="#" class="scnd">Watch the keynote</a>
-        </div>
-    </section>
-    <article>
-        <div id="promos" class="clearfix">
-            <div class="img" id="education">
-            <a href="#"><img src="http://images.apple.com/v/home/cl/images/promos/education_large.jpg" alt=""></a>
-            </div>
-            <div class="img" id="iphone_6s"><a href="#"><img src="http://images.apple.com/v/home/cl/images/promos/iphone_6s_large.jpg" alt=""></a></div>
-            <div class="img" id="macbook"><a href="#"><img src="http://images.apple.com/v/home/cl/images/promos/macbook_large.jpg" alt=""></a></div>
-            <div class="img" id="accessories"><a href="#"><img src="http://images.apple.com/v/home/cl/images/promos/accessories_large.jpg" alt=""></a></div>
-        </div>
-    </article>
-    <section>
-        <p><a href="#">AC Wall Plug Adapter Recall Program &gt;</a></p>
-    </section>
-    <footer>
+  </header>
+  <div id="background">
+      <div>
+          <img src="http://images.apple.com/v/home/cl/images/heros/march_event_2016_medium.jpg" alt="Tim Cook" class="wrapper"></div>
+      </div>
+      <!-- <div id="link">
+          <div><a href="#" class="frst">March Event 2016</a></div>
+          <div><a href="#" class="scnd">Watch the keynote</a></div>
+      </div> -->
+  <div class="promos">
+        <div><img class="images" id="education"></div>
+        <div><img class="images" id="iphone_6s"></div>
+        <div><img class="images" id="macbook"></div>
+        <div><img class="images" id="accessories"></div>
+  </div>
+  <section>
+     <div id="text"><a href="#">AC Wall Plug Adapter Recall Program &gt;</a></div>
+   </section>
+  <footer>
         <div id="navigation">
             <div class="column">
                <span>Shop and Learn</span>
@@ -98,7 +89,7 @@
                 </ul>
               </div>
             </div>
-            <div class="column">
+            <div class="column" id="account">
               <div class="column-section">
                <span>Account</span>
                 <ul>
@@ -119,7 +110,7 @@
                 </ul>
               </div>
             </div>
-            <div class="column">
+            <div class="column" id="about">
                   <span>About Apple</span>
                   <ul>
                     <li><a href="#">Apple Info</a></li>
