@@ -11,6 +11,9 @@ header {
     margin: 0 auto;
     max-width: 95%;
 }
+.menu_logo {
+    display: none;
+}
 #menu {
     height: 44px;
     overflow: hidden;
@@ -34,6 +37,10 @@ header {
 .icon img {
     height: 45px;
     margin-top: -12px;    
+}
+.block_wrapper {
+    width: 100%;
+    height: auto;
 }
 .wrapper {
     overflow: hidden;
@@ -70,6 +77,7 @@ header {
   float: left;
   height: auto;
   width: 25%;
+/*    border: 1px solid #fff;*/
 }
 #education {
   content: url(http://images.apple.com/v/home/cl/images/promos/education_medium.jpg);
@@ -189,143 +197,198 @@ footer {
 .ft_menu li:nth-child(5) {
     border-right: none;
 }
+
 @media screen and (max-width:1024px) {
-  .head {
+  
+.head {
    max-width: 100%;
-  }
-  #menu {
+}
+.menu_logo {
+    display: none;
+}
+#menu {
     margin-left: 13%
-  }
-  #menu li {
+}
+#menu li {
    margin-right: 5%;
-  }
-  .wrapper {
+}
+.wrapper {
     content: url(http://images.apple.com/v/home/cl/images/heros/march_event_2016_small.jpg);  
-  }
-  .promos {
+}
+.promos {
     width: 100%;
     height: auto;
     margin-top: -5%;
-  }
-  .images {
+}
+.images {
     float: left;
     height: auto;
     width: 50%;
-  }
-  #education {
+}
+#education {
     content: url(http://images.apple.com/v/home/cl/images/promos/education_medium.jpg);
-  }
-  #iphone_6s {
+}
+#iphone_6s {
     content: url(http://images.apple.com/v/home/cl/images/promos/iphone_6s_medium.jpg);
-  }
-  #macbook {
+}
+#macbook {
     content: url(http://images.apple.com/v/home/cl/images/promos/macbook_medium.jpg);
-  }
-  #accessories {
+}
+#accessories {
     content: url(http://images.apple.com/v/home/cl/images/promos/accessories_medium.jpg);
-  }
-  #navigation {
+}
+#navigation {
     margin: 0 auto;
     min-width: 90%;
     font-size: 12px;
-  }
-  .column {
+}
+.column {
     width: 14%;
     margin-left: 40px;
     margin-top: 10px;}
 }
+
 @media screen and  (max-width: 795px) {
-  .head {
-   max-width: 100%;
-  }
-  #menu {
+
+.head {
+    max-width: 100%;
+}
+.menu_logo {
+    display: none;
+}
+#menu {
     margin-left: 14%
-  }
-  #menu li {
+}
+#menu li {
    margin-right: 3%;
-  }
-  .icon img {
+}
+.icon img {
       margin-left: -10px;
-    }
-  .wrapper {
+}
+.wrapper {
     overflow: hidden;
     width: 100%;
     margin-top: 3%;
 }
-  #promos {
+#promos {
      width: 100%;
      height: auto;
-  }
-  .images {
+}
+.images {
     float: left;
     height: auto;
     width: 100%;
-  }
-  #education {
+}
+#education {
     content: url(http://images.apple.com/v/home/cl/images/promos/education_small.jpg);
-  }
-  #iphone_6s {
+}
+#iphone_6s {
     content: url(http://images.apple.com/v/home/cl/images/promos/iphone_6s_small.jpg);
-  }
-  #macbook {
+}
+#macbook {
     content: url(http://images.apple.com/v/home/cl/images/promos/macbook_small.jpg);
-  }
-  #accessories {
+}
+#accessories {
     content: url(http://images.apple.com/v/home/cl/images/promos/accessories_small.jpg);
-  }
-  #navigation {
+}
+#navigation {
     min-width: 45%;
     font-size: 13px;
-  }
-  .column {
+}
+.column {
     width: 27%;
     margin-left: 30px;
     margin-top: 10px
-  }
-  #account {
+}
+#account {
     width: 54%
-  }
-  #about {
+}
+#about {
     margin-left: -23%;
-  }
-  .right {
+}
+.right {
     width: 260px;
     float: none;
 }
-  .ft_menu ul {
+.ft_menu ul {
     width: 100%;
     list-style-type: none;
     margin-top: 2%;
 }
-  .ft_menu li:last-child {
+.ft_menu li:last-child {
     background: url(http://images.apple.com/ac/flags/1/images/us/16.png) no-repeat 1.5px;}
 }
 @media screen and (max-width: 530px) {
-  .head {
-   max-width: 15%;
-  }
-  .wrapper {
+
+.menu_logo {
+    position: relative;
+    background-color: #000;
+    width: 50px;
+    display: block;
+}
+.menu_logo img {
+    margin-left: 43px;
+}
+.menu_logo ul {
+    display: none;
+}
+.menu_logo:hover ul {
+    position: absolute;
+    display: block;
+    margin-top: -5px;
+    margin-left: -40px;
+}
+.menu_logo a {
+    text-decoration: none;
+    color: #fff;
+}
+.menu_logo li {
+    border: 0.5px solid #262626;
+    border-left: none;
+    border-right: none;
+    width: 100px;
+    padding: 0px;
+    text-align: center;
+    background-color: #000;
+    font-size: 17px;
+    list-style-type: none;
+}
+/*
+.menu_logo a:hover {
+    text-decoration: underline;
+}
+*/
+.menu_logo li:hover {
+    background-color: #333333;
+}
+#menu {
+    display: none;
+}
+.wrapper {
     overflow: hidden;
     width: 100%;
-    margin-top: 3%;
+    margin-top: 10%;
 }
-  #navigation {
+.promos {
+    margin-top: -4px;    
+}
+#navigation {
     max-width: 480px;
     font-size: 12px;
-  }
-  .column {
+}
+.column {
     width: 40%;
     margin-left: 30px;
     margin-top: 10px
-  }
-  #account {
+}
+#account {
     width: 29%
-  }
-  #about {
+}
+#about {
     margin-top: -11%;
     margin-left: 30px;
-  }
- .right {
+}
+.right {
     width: 260px;
     float: none;
 }
