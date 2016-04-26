@@ -336,7 +336,7 @@ footer {
     background: url(http://images.apple.com/ac/flags/1/images/us/16.png) no-repeat 1.5px;}
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 730px) {
 
 .menu_logo {
     float: left;
